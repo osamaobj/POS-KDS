@@ -1,0 +1,31 @@
+<div class="center">
+    <div class="imgcontainer">
+        <img src="../assets/img/logo.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="my-12" style="padding-left: 150px;">
+        <div class="row">
+            <div class="col-sm-3 col-md-9 col-lg-4 col-xl-6">
+                <mat-form-field class="example-full-width" style="padding: 0px 0px 30px 0px;">
+
+                    <input matInput id="KDScategory_id_search" type="text" placeholder="Enter Api Key" name="name">
+
+                </mat-form-field>
+                <!-- <span class="help-block" *ngIf="name.touched">
+          Key is required
+      </span> -->
+            </div>
+
+            <div class="col-sm-9 col-md-3 col-lg-8 col-xl-3 ">
+                <button id="verify" title="Verify KDS" mat-raised-button class="btn btn-sm btn-success " (click)="enableButton2()">Verify</button>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-3 col-md-9 col-lg-4 col-xl-10" style="padding-left: 100px;" *ngIf="this.syncButton">
+        <button id="syncData" title="Add New KDS Category" mat-raised-button class="btn btn-sm btn-success ">Sync Data
+      From POS</button>
+    </div>
+
+</div>
